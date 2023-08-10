@@ -1,0 +1,10 @@
+[Unit]
+Description=Service Logger
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/service-logger.sh
+
+[Install]
+WantedBy=default.target
